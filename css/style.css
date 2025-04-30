@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Nosifer&display=swap');
+
+body{
+    background: url(../img/bg.jpg) no-repeat ;
+    background-size: cover;
+    background-position: center;
+
+    overflow: hidden;
+
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+header h1{
+    text-align: center;
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: #e90404;
+    font-family: "Nosifer", sans-serif;
+    
+}
+.slider{
+   
+    position: relative;;
+    margin: 0 auto;
+    width: 465px;
+    height: 816px;
+    overflow: hidden;
+}
+.slides{
+   
+    width: 400%;
+    height: 700px;
+    display: flex;
+}
+.slides input{
+    display: none;
+}
+.slide{
+    margin-top: 9px;
+    transition: 1s;
+    width: 25%;
+    position: relative;
+}
+
+.manual-navigation{
+    
+    position: absolute;
+    width: 800px;
+    bottom: 10px;
+    margin-top: -40px;
+    display: flex;
+    gap: 55px;;
+    justify-content: center;
+}
+
+
+#radio1:checked ~ .first{
+   margin-left: 0;
+}
+#radio2:checked ~ .first{
+    margin-left: -25%;
+ }
+ #radio3:checked ~ .first{
+    margin-left: -50%;
+ }
+ #radio4:checked ~ .first{
+    margin-left: -75%;
+ }
+
+.navigation-auto{
+    position: absolute;
+    width: 800px;
+    margin-top: 376px;
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+}
+.navigation-auto div:not(:last-child){
+    margin-right: 40px;
+}
+
+.navigation-buttons {
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    display: flex;
+    z-index: 10;
+    justify-content: space-between;
+    padding: 0 20px;
+    transform: translateY(-50%);
+}
+
+.navigation-buttons button {
+    background-color: rgba(0,0,0,0.5);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 36px;
+    border-radius: 10px;
+}
