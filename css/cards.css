@@ -21,6 +21,7 @@
   
 }
 .card .title{
+    overflow: visible;
     font-family: "Almendra", serif;
     width: 68%;
     text-align: center;
@@ -43,6 +44,7 @@
     border-radius: 10px;
 }
 .card-image img{
+    
    margin-bottom: -230px;
     object-fit: cover;
    border-radius: 1pc;
@@ -52,13 +54,14 @@
     
 }
 .card-image{
+    overflow: visible;
     border-radius: 10px;
     
   
     margin: auto;
 }
 .history{
-
+    overflow: visible;
     
     margin: auto auto 50px;
     overflow-y: auto; 
@@ -80,6 +83,7 @@
   font-size: 1.5rem;
 }
 strong{
+    overflow: visible;
     margin-top: -20px;
     font-family: "Almendra", serif;
     font-weight: 100;
@@ -91,6 +95,7 @@ strong{
     float: left;
 }
 .history p{
+    overflow: visible;
     font-family: "Almendra", serif;
     color: #000000;
     font-size: 1.3rem;

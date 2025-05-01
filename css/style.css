@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Nosifer&display=swap');
-
+*{
+    overflow: hidden;
+}
 body{
     background: url(../img/bg.jpg) no-repeat ;
     background-size: cover;
@@ -17,6 +19,7 @@ body{
     align-items: center;
 }
 header h1{
+    overflow: visible;
     text-align: center;
     font-size: 1.1rem;
     font-weight: 500;
